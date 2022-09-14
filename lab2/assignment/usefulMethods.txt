@@ -1,0 +1,29 @@
+
+
+
+
+
+DUNGEON:
+Represents a dungeon as a collection of (possibly connected) rooms.  Each
+room in the dungeon is unique. A room can be connected to rooms that are
+not registered with the dungeon by calling add_room; this just means there
+is no way to look up the room, but it will still be possible to travel
+such a room.  Likewise, client code can start with other rooms besides the
+specified start room.
+
+Attributes:
+    start (Room): recommended start location when exploring the dungeon.
+
+
+ROOM:
+neighbor_to --> give direction and it tells you whether there is a neighbor
+
+def neighbors --> returns list of neighbors accesible from self
+
+every room has a name and 
+
+
+Goal: a room
+Action: going to next room
+Frontier: will be a list of neighbors that you have seen 
+on current node call neighbors, add to data structure, than pop off and go to next
